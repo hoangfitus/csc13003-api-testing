@@ -22,6 +22,6 @@ jobs:
 
       - name: Run API tests with Newman
         run: |
-          newman run LoginAPI.postman_collection.json \
+          newman run users.postman_collection.json \
             --iteration-data login_data.csv \
             --reporters cli
